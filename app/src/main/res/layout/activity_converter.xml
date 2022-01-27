@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#333B67"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".converter">
+
+    <EditText
+        android:id="@+id/input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp"
+        android:gravity="center"
+        android:background="#7C6F8E"
+        android:textStyle="bold"
+        android:hint="Input the amount BDT"
+        android:textSize="25dp" />
+
+
+
+    <RadioGroup
+        android:id="@+id/group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <RadioButton
+            android:id="@+id/UsdBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="USD"
+            android:textSize="25dp" />
+
+        <RadioButton
+            android:id="@+id/euroBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="EURO"
+            android:textSize="25dp" />
+
+        <RadioButton
+            android:id="@+id/rupeeBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="RUPEE"
+            android:textSize="25dp" />
+
+        <RadioButton
+            android:id="@+id/kdBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kuwaiti Dinar"
+            android:textSize="25dp" />
+
+        <RadioButton
+            android:id="@+id/tlBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Turkish Lira"
+            android:textSize="25dp" />
+
+
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/outputId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="35dp"
+        android:gravity="center"
+        android:background="#595163"
+        android:textStyle="bold"
+        android:hint="Output"
+        android:textSize="25dp" />
+
+</LinearLayout>

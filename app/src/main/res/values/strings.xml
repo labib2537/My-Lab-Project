@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">All in One</string>
+    <string-array name="department">
+        <item>CSE</item>
+        <item>BBA</item>
+        <item>EEE</item>
+        <item>English</item>
+
+    </string-array>
+    <string-array name="section">
+        <item>PC-A</item>
+        <item>PC-B</item>
+        <item>PC-C</item>
+        <item>PC-D</item>
+        <item>PC-E</item>
+        <item>PC-F</item>
+        <item>PC-G</item>
+        <item>PC-H</item>
+        <item>PC-J</item>
+    </string-array>
+    <string name="qOne">1. What is the longest sea beach in the world?</string>
+    <string name="qTwo">2. Who is the owner of android OS?</string>
+    <string name="qThree">3. Who is the CEO of Google?</string>
+    <string name="qFour">4. Which one of the following is not a web browser?</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="result">Total Marks</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

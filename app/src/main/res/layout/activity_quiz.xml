@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="5"
+    tools:context=".quiz">
+
+    <FrameLayout
+        android:layout_height="405dp"
+        android:layout_width="match_parent"
+        android:id="@+id/fragmentID">
+    </FrameLayout>
+
+    <Button android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/nextBtn"
+        android:layout_alignParentRight="true"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/fragmentID"
+        android:layout_gravity="right"
+        android:textColor="@color/black"
+        android:textAllCaps="false"
+        android:textSize="15dp"
+        android:text="Next">
+    </Button>
+
+
+
+
+</LinearLayout>

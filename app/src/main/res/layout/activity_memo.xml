@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#4F83AE"
+    tools:context=".memo">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30sp"
+        android:weightSum="2"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:id="@+id/textID"
+            android:text="ID"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:textSize="24sp"/>
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/editTextID"
+            android:background="#686E8E"/>
+
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30sp"
+        android:weightSum="2"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/textDepartment"
+            android:text="Select Department"
+            android:textStyle="bold"
+            android:textSize="24sp"/>
+        <Spinner
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/spinnerDepartment"
+            android:background="#686E8E"/>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30sp"
+        android:weightSum="2"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:id="@+id/textName"
+            android:text="Name"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:textSize="24sp"/>
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/editTextName"
+            android:background="#686E8E"/>
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30sp"
+        android:weightSum="2"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:id="@+id/textSection"
+            android:text="Select Section"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:textSize="24sp"/>
+        <Spinner
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:id="@+id/spinnerSec"
+            android:layout_weight="1"
+            android:background="#686E8E"/>
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30sp"
+        android:weightSum="2"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:id="@+id/textCg"
+            android:text="CGPA"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:textSize="24sp"/>
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/editTextcg"
+            android:background="#686E8E"/>
+
+
+
+    </LinearLayout>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:layout_marginTop="25dp"
+        android:backgroundTint="#564F63"
+        android:id="@+id/btn"
+        android:onClick="saveBtn"
+        ></Button>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:weightSum="2">
+        <EditText
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:hint="ID"
+            android:textStyle="bold"
+            android:id="@+id/idSrch"
+            ></EditText>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="Display"
+            android:id="@+id/show"
+            android:backgroundTint="@color/purple_700"
+            android:onClick="showData"
+            android:layout_height="wrap_content"></Button>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name"
+            android:id="@+id/NameView"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textAlignment="center"
+            ></TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Department"
+            android:textStyle="bold"
+            android:id="@+id/DView"
+            android:textSize="20dp"
+            android:textAlignment="center"
+            ></TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Section"
+            android:id="@+id/SecView"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textAlignment="center"
+            ></TextView>
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="CGPA"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:id="@+id/cgView"
+            android:textAlignment="center"
+            ></TextView>
+    </LinearLayout>
+
+</LinearLayout>
